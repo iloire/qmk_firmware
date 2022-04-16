@@ -19,7 +19,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                       KC_LBRC,KC_RBRC,                                                       KC_PLUS, KC_EQL,
                                       KC_SPC,RAISE,                           KC_BSPC, KC_SFTENT,
 
-                                      LALT_T(KC_TAB),KC_HOME,                 KC_END,  KC_DEL,
+                                      KC_LALT,KC_HOME,                        KC_END,  KC_DEL,
                                       KC_LCTRL, KC_LGUI,                      KC_LGUI, KC_GRV
   ),
 
@@ -39,11 +39,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_F12 , KC_F1 , KC_F2 , KC_F3 , KC_F4 , KC_F5 ,                        KC_F6  , KC_F7 , KC_F8 , KC_F9 ,KC_F10 ,KC_F11 ,
        _______,_______,_______,_______,_______,KC_LPRN,                        KC_RPRN,_______,KC_UP, KC_INS ,KC_CAPSLOCK, KC_MUTE,
        _______,KC_LEFT,KC_UP  ,KC_DOWN,KC_RGHT,KC_LEFT_CURLY_BRACE,            KC_RIGHT_CURLY_BRACE, KC_LEFT, KC_DOWN, KC_RGHT, KC_PGUP, KC_VOLU,
-       LCTL(KC_Z),_______,_______,LCTL(KC_C),LCTL(KC_V),KC_LBRC,               KC_RBRC,_______,LALT(KC_LEFT),LALT(KC_RGHT),KC_PGDN,KC_VOLD,
-                       _______,_______,                                              LCTL(LSFT(KC_TAB)) ,LCTL(KC_TAB),
+       _______,_______,_______,_______,_______,KC_LBRC,                        KC_RBRC,_______,KC_DOWN,_______,KC_PGDN,KC_VOLD,
+                       _______,_______,                                                      KC_MINS ,KC_PLUS,
                                                COLEMAK,_______,                LCTL(KC_BSPC),_______,
 
-                                               _______,_______,                _______,_______,
-                                               _______,_______,                _______,_______
+                                               RGB_HUI,RGB_SAI,                RGB_VAI,BL_ON,
+                                               RGB_HUD,RGB_SAD,                RGB_VAD,RGB_TOG
   ),
 };

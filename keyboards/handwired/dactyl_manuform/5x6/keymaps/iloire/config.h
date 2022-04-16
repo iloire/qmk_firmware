@@ -15,8 +15,18 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+
 #pragma once
+
 
 #define USE_SERIAL
 
-#define MASTER_RIGHT
+
+// RGB backlight
+#undef RGB_DI_PIN
+#define RGB_DI_PIN D1
+#undef RGBLED_NUM
+#define RGBLED_NUM 3
+#define RGBLIGHT_ANIMATIONS
+#define RGBLIGHT_LIMIT_VAL 95
+#define RGBLIGHT_SPLIT
